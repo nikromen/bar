@@ -1,5 +1,5 @@
 Name:           bar
-Version:        0.1.0
+Version:        0.1.1
 Release:        1%{?dist}
 Summary:        bar
 
@@ -34,5 +34,8 @@ install -p -m 0755 bin/%(name) %{buildroot}%{_bindir}
 
 
 %changelog
+* Tue Mar 14 2023 Jiri Kyjovsky <j1.kyjovsky@gmail.com> 0.1.1-1
+- new package built with tito
+
 * Tue Mar 14 2023 Jiri Kyjovsky <j1.kyjovsky@gmail.com>
 - something
