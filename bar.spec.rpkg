@@ -17,7 +17,7 @@ BuildArch: noarch
 
 
 %prep
-{{{ git_dir_setup_macro }}}
+%setup -q
 
 
 %build
@@ -25,7 +25,7 @@ BuildArch: noarch
 
 %install
 mkdir -p %{buildroot}%{_bindir}
-install -p -m 0755 bin/%{name} %{buildroot}%{_bindir}
+install -p -m 0755 %{_bindir}/%{name} %{buildroot}%{_bindir}
 
 
 %files
